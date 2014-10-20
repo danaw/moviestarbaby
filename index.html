@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Movie Star Baby</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,700italic,700,400italic' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="wrapper">
+
+<!-- Intro -->
+
+	<div class="container">
+   	 <h2>My Movie Star Baby</h2>
+    	<h3>A Hollywood Baby Name Generator</h3>
+    	<hr>
+    	<p>First select a gender. Then select a genre. Click the photos or the randomize buttons to generate a new name or title within the same category.
+	</div> <!-- .container -->
+
+<!-- Result -->
+
+<div class="result">
+	<div class="container">
+		<div class="results clearfix">
+	  	  <div class="result-image image1">
+
+	  	<div class="dropdown">
+	    <form action="">
+	      <select name="gender" label="Select Baby Gender" id="gender">
+	        <option value="selectgender" selected>Select Gender</option>
+            <option value="boy">Boy</option>
+            <option value="girl">Girl</option>
+          </select>
+          </form>
+        </div> <!-- .dropdown -->  
+
+
+	  		<img src="images/image_person.png" alt="Actor or Actress Photo" id="person-photo">
+	  		<button id="button-name">
+              Randomize
+            </button>
+	  	  </div> <!-- .result-image -->
+	  	  <div class="result-plus">
+	  		<p>+</p>
+	  	  </div> <!-- .result-plus -->
+	  	  <div class="result-plus2">
+	  		<p>+</p>
+	  	  </div> <!-- .result-plus2 -->
+	  	  <div class="result-image image2">
+
+        <div class="dropdown">
+		<form action="">
+		  <select name="genre" label="Select Movie Genre" id="genre">
+		    <option value="selectgenre" selected>Select Genre</option>
+            <option value="Action">Action</option>
+            <option value="Animated">Animated</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Horror">Horror</option>
+            <option value="Romance">Romance</option>
+            <option value="SciFi">Science Fiction</option>
+            <option value="Superhero">Superhero</option>
+          </select>
+          </form>
+		</div> <!-- .dropdown -->
+
+	  		<img src="images/image_movie.png" alt="Movie Poster" id="movie-poster">
+	  		<button id="button-title">
+              Randomize
+            </button>
+	  	  </div> <!-- .result-image -->
+	</div> <!-- .container -->
+</div> <!-- /.result -->
+
+<div class="result-name clearfix">
+  <div class="container">
+    <h4><span class="first-name"></span> <span class="movie-title"></span></h4>
+  </div>
+</div>
+
+<footer></footer>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/app_movie.js"></script>
+
+</body>
+</html>
